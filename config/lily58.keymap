@@ -10,9 +10,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #define DEFAULT 0
-#define NAV   1
-#define SYS   2
-#define ALT   3
+#define ALT     1
+#define NAV     2
+#define SYS     3
 
 / {
     keymap {
