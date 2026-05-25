@@ -24,7 +24,7 @@
         &kp TAB   &kp Q  &kp W  &kp E     &kp R    &kp T                              &kp Y     &kp U      &kp I     &kp O   &kp P     &kp BACKSLASH
         &kp ESC   &kp A  &kp S  &kp D     &kp F    &kp G                              &kp H     &kp J      &kp K     &kp L   &kp SEMI  &kp SQT
         &kp LSHFT &kp Z  &kp X  &kp C     &kp V    &kp B      &kp LBKT     &kp RBKT   &kp N     &kp M      &kp COMMA &kp DOT &kp SLASH &mt RSHFT EQUAL
-                                &tog ALT  &kp LGUI &kp LCTRL  &lt NAV RET  &kp SPACE  &kp BSPC  &kp LALT   &mo SYS
+                                &kp LALT  &kp LGUI &kp LCTRL  &lt NAV RET  &kp SPACE  &kp BSPC  &kp RALT   &mo SYS
       >;
     };
 
@@ -41,7 +41,7 @@
     NAV {
       bindings = <
         &kp GRAVE  &kp EXCL  &kp AT        &kp HASH       &kp DLLR        &kp PRCNT                     &kp CARET   &kp AMPS     &kp ASTRK     &kp LPAR     &kp RPAR  &kp MINUS
-        &kp LBKT   &kp RBKT  &kp LPAR      &kp RPAR       &kp EQUAL       &trans                        &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP  &kp C_NEXT   &kp C_PP   &kp PSCRN
+        &kp LBKT   &kp RBKT  &kp LPAR      &kp RPAR       &kp EQUAL       &trans                        &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP  &kp C_NEXT   &kp C_PP  &kp PSCRN
         &trans     &trans    &kp LBRC      &kp RBRC       &kp LT          &kp GT                        &kp LEFT    &kp DOWN     &kp UP        &kp RIGHT    &trans    &trans
         &trans     &trans    &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &trans    &trans   &trans     &kp HOME    &kp PG_DN    &kp PG_UP     &kp END      &trans    &kp F20
                                            &trans         &trans          &trans    &trans   &trans     &kp DEL     &trans       &trans
