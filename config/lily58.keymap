@@ -15,37 +15,6 @@
 #define SYS     3
 
 / {
-    macros {
-        copy: copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>;
-        };
-
-        cut: cut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>;
-        };
-
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>;
-        };
-    };
-};
-
-/ {
   keymap {
     compatible = "zmk,keymap";
 
@@ -74,8 +43,8 @@
         &kp GRAVE  &kp EXCL  &kp AT        &kp HASH       &kp DLLR        &kp PRCNT                     &kp CARET   &kp AMPS     &kp ASTRK     &kp LPAR     &kp RPAR  &kp MINUS
         &kp LBKT   &kp RBKT  &kp LPAR      &kp RPAR       &kp EQUAL       &trans                        &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP  &kp C_NEXT   &kp C_PP  &kp PSCRN
         &trans     &trans    &kp LBRC      &kp RBRC       &kp LT          &kp GT                        &kp LEFT    &kp DOWN     &kp UP        &kp RIGHT    &trans    &trans
-        &trans     &trans    &cut          &copy          &paste          &trans    &trans   &trans     &kp HOME    &kp PG_DN    &kp PG_UP     &kp END      &trans    &kp F20
-                                           &trans         &trans          &trans    &trans   &trans     &kp DEL     &trans       &trans
+        &trans     &trans    &trans        &trans         &trans          &trans    &trans   &trans     &kp HOME    &kp PG_DN    &kp PG_UP     &kp END      &trans    &kp F20
+                                           &trans         &trans          &trans    &trans   &trans     &trans      &trans       &trans
       >;
     };
 
