@@ -31,11 +31,11 @@
     ALT {
       display-name = "ALT";
       bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &kp LBKT
-        &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &kp RET    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &kp SPACE  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &kp LBKT
+        &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp RET    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &kp LALT  &trans  &kp SPACE  &trans  &trans  &trans  &trans
       >;
     };
 
