@@ -10,9 +10,8 @@
 
 #define DEFAULT 0
 #define ALT     1
-#define LANG    2
-#define NAV     3
-#define SYS     4
+#define NAV     2
+#define SYS     3
 
 / {
   keymap {
@@ -33,43 +32,32 @@
       display-name = "ALT";
       bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &kp LBKT
         &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &kp RET    &trans  &trans  &trans  &trans  &trans  &trans  &kp F20
                                 &trans  &kp LALT  &trans  &kp SPACE  &trans  &trans  &trans  &trans
       >;
     };
 
-    LANG {
-      display-name = "LANG";
-      bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &kp LBKT
-        &trans  &trans  &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
-      >;
-    };
-
     NAV {
       display-name = "NAV";
       bindings = <
-        &kp GRAVE  &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT                 &kp CARET   &kp AMPS     &kp ASTRK     &kp LPAR     &kp RPAR  &kp MINUS
-        &trans     &trans    &kp LPAR  &kp RPAR  &kp EQUAL  &trans                    &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP  &kp C_NEXT   &kp C_PP  &kp PSCRN
-        &trans     &trans    &kp LBRC  &kp RBRC  &kp LT     &kp GT                    &kp LEFT    &kp DOWN     &kp UP        &kp RIGHT    &trans    &trans
-        &trans     &trans    &kp LBKT  &kp RBKT  &trans     &trans    &trans  &trans  &kp HOME    &kp PG_DN    &kp PG_UP     &kp END      &trans    &trans
-                                       &trans    &trans     &trans    &trans  &trans  &trans      &trans       &trans
+        &kp GRAVE  &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT                  &kp CARET   &kp AMPS     &kp ASTRK     &kp LPAR     &kp RPAR  &kp MINUS
+        &trans     &trans    &kp LPAR  &kp RPAR  &kp EQUAL  &trans                     &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP  &kp C_NEXT   &kp C_PP  &kp PSCRN
+        &trans     &trans    &kp LBRC  &kp RBRC  &kp LT     &kp GT                     &kp LEFT    &kp DOWN     &kp UP        &kp RIGHT    &trans    &trans
+        &trans     &trans    &kp LBKT  &kp RBKT  &trans     &trans     &trans  &trans  &kp HOME    &kp PG_DN    &kp PG_UP     &kp END      &trans    &trans
+                                       &trans    &trans     &trans     &trans  &trans  &trans      &trans       &trans
       >;
     };
 
     SYS {
       display-name = "SYS";
       bindings = <
-        &kp F1      &kp F2        &kp F3        &kp F4        &kp F5       &kp F6                           &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4                     &trans  &trans  &trans  &trans   &trans   &trans
-        &trans      &trans        &trans        &trans        &trans       &trans                           &trans  &trans  &trans  &trans   &trans   &trans
-        &trans      &trans        &trans        &trans        &trans       &trans      &tog LANG  &tog ALT  &trans  &trans  &trans  &trans   &trans   &trans
-                                                &trans        &trans       &trans      &trans     &trans    &trans  &trans  &trans
+        &kp F1      &kp F2        &kp F3        &kp F4        &kp F5       &kp F6                          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4                    &trans  &trans  &trans  &trans   &trans   &trans
+        &trans      &trans        &trans        &trans        &trans       &trans                          &trans  &trans  &trans  &trans   &trans   &trans
+        &trans      &trans        &trans        &trans        &trans       &trans        &trans  &tog ALT  &trans  &trans  &trans  &trans   &trans   &trans
+                                                &trans        &trans       &trans        &trans  &trans    &trans  &trans  &trans
       >;
     };
   };
